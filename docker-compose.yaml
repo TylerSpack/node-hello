@@ -1,0 +1,11 @@
+version: '3.3'
+services:
+    helloworld:
+        ports:
+            - '3000:3000'
+        container_name: hi
+        environment:
+          - FIRST= "Tyler"
+          - LAST= "SPACKMAN"
+        image: 'helloworld:latest'
+        build: https://github.com/johnpapa/node-hello
